@@ -13,17 +13,17 @@ from app.utils.string import StringUtils
 
 class DownloadingMsg(_PluginBase):
     # 插件名称
-    plugin_name = "下载进度推送"
+    plugin_name = "开始下载通知"
     # 插件描述
-    plugin_desc = "定时推送正在下载进度。"
+    plugin_desc = "下载任务开始时，通知推送给配置的渠道，支持消息隔离。"
     # 插件图标
     plugin_icon = "downloadmsg.png"
     # 插件版本
     plugin_version = "1.1"
     # 插件作者
-    plugin_author = "thsrite"
+    plugin_author = "91651"
     # 作者主页
-    author_url = "https://github.com/thsrite"
+    author_url = "https://github.com/91651"
     # 插件配置项ID前缀
     plugin_config_prefix = "downloading_"
     # 加载顺序
