@@ -93,8 +93,7 @@ class StartDownloadNotification(_PluginBase):
         """
         channel_value = None
         title = data['title']
-        source = self
-        messages = []
+        text = data['text']
         image = data['image']
         
 
@@ -106,11 +105,10 @@ class StartDownloadNotification(_PluginBase):
             channel = None
         
         logger.info(f"开始推送消息--渠道: {channel}，用户: {username}")
-        self.post_message(mtype=NotificationType.Download,
-                          channel=channel,
-                          source = source,
+        self.post_message(channel=channel,
                           title=title,
-                          text="测试",
+                          text=text,
+                          image=image,
                           userid=username)
 
     def get_state(self) -> bool:
